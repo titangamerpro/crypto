@@ -1,0 +1,115 @@
+.seal {
+    padding-top: 120px;
+
+
+    &-text {
+        width: 100%;
+        max-width: 487px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &-title {
+        margin-bottom: 35px;
+    }
+
+    &-sub {
+        max-width: 485px;
+        width: 100%;
+        padding-left: 65px;
+        @include syne(34px, 46px, 700);
+        display: block;
+        background: url(../img/Subtract.png) no-repeat left center;
+        margin: 50px 0 65px;
+
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    &-block {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 32px 53px 32px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s linear;
+        position: relative;
+
+
+        &:hover {
+            background: linear-gradient(321.51deg, #E215A7 -47.46%, #EE1D78 138.52%);
+            transition: 0.4s linear;
+
+
+            .seal-icon {
+                background: linear-gradient(87.09deg, #E215A7 -24.36%, #EE1D69 91.65%),
+                    linear-gradient(87.09deg, #E215A7 -24.36%, #EE1D69 91.65%),
+                    linear-gradient(289.23deg, #E215A7 -92.62%, #EE1D69 57.32%),
+                    linear-gradient(180deg, #E9EEF4 -21.63%, #D2DCE8 100%);
+                box-shadow: inset 0px 0px 20px rgba(201, 0, 110, 0.93),
+                    -2px -2px 5px rgba(108, 136, 192, 0.03),
+                    inset 0px 0px 12px rgba(206, 210, 219, 0.58),
+                    5px 4px 15px rgba(0, 0, 0, 0.15);
+            }
+
+            .seal-block-link {
+                opacity: 1;
+                transform: translateX(-50%) rotate(360deg);
+
+            }
+        }
+    }
+
+    &-icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #13223D, #13223D), #13223D;
+        box-shadow: inset 0px 0px 24px -7px #88BCFA;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: 0.3s linear;
+
+    }
+
+    &-block-title {
+        font-size: 24px;
+        line-height: 26px;
+        text-transform: capitalize;
+    }
+
+    &-block-text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &-block-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-image: url(../img/arrow-right.svg),
+            linear-gradient(333.74deg, #EE1D6A 7.32%, #E215A7 110.79%);
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.22);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        bottom: -22px;
+        transform: translateX(-50%) rotate(0deg);
+        transition: 0.3s ease;
+    }
+
+    
+}

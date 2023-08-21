@@ -1,0 +1,74 @@
+.feedback{
+    &-slider-wrapper {
+        width: 370px;
+        margin: 0 auto;
+        position: relative;
+        padding: 105px 23px;
+        background: $bg-tabs;
+
+        &::after{
+            content: '';
+            width: 96px;
+            height: 75px;
+            background: url(../img/quet.png) no-repeat center;
+            position: absolute;
+            right: 20px;
+            bottom: 22px;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        top: -28px;
+        border: 13px solid #111e36;
+        right: -74px;
+        border-radius: 50%;
+        width: 174px;
+        height: 174px;
+        background: $color-tints;
+
+        img {
+            height: 100%;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    &-slider-name {
+        display: block;
+        color: #FEB109;
+        text-shadow: 8px 8px 23px rgba(0, 0, 0, 0.37);
+        font-family: DM Sans;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+    }
+
+    &-slider-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &-slider-lock {
+        color: $color-tints;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: capitalize;
+    }
+
+    &-slider-text {
+        color: #DFE1E2;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: capitalize;
+    }
+}

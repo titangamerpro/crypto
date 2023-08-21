@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    font: inherit;
+    border: 0;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// main style
+
+body {
+    @include dm-sans(17px, 1, 500);
+    color: $color-primery;
+    background-color: $bg-body;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-active {
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.inner-text {
+    @include dm-sans(16px, 26px, 400);
+    color: $color-text;
+}
+
+.bg-grnt {
+    background: linear-gradient(278.44deg, #E215A7 -7.56%, #EE1D78 118.54%);
+}
+
+.inner-block{
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 359px;
+        height: 359px;
+        top: -79px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../img/Ellipse-title.svg) no-repeat center;
+        border-radius: 50%;
+        filter: blur(67px)
+    }
+}
+
+.inner-title {
+    @include syne(40px, 50px, 700);
+    text-transform: capitalize;
+    color: $color-tints;
+    text-align: center;
+    position: relative;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
+        height: 1px;
+        box-shadow: 2px 2px 4px $color-black;
+        background: rgb(238, 29, 117);
+        background: linear-gradient(90deg, rgba(238, 29, 117, 1) 100%, rgba(237, 29, 41, 1) 100%);
+    }
+
+    &::after {
+        bottom: -5px;
+    }
+
+    &::before {
+        top: -5px;
+    }
+
+}
+
+.text-gradient {
+   @include syne(34px, 46px, 700);
+    text-transform: capitalize;
+    background: linear-gradient(101.09deg, #EE1D76 12.45%, #E215A7 60.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

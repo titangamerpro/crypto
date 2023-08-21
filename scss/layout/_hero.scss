@@ -1,0 +1,113 @@
+.hero {
+    background: url(../img/bg-hero.png) no-repeat center;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-content {
+        width: 570px;
+        margin: 128px 0 215px;
+    }
+
+    &-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: $color-orange;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &-title {
+        @include syne(50px, 60px, 700);
+        text-transform: uppercase;
+        color: $color-tints;
+        border: 5px solid rgba(0, 0, 0, 0.13);
+        margin-bottom: 40px;
+    }
+
+    &-text {
+        margin-bottom: 50px;
+    }
+
+    &-block {
+        width: 332px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-link {
+        display: block;
+        width: 120px;
+        text-align: center;
+        padding: 7px 0;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: $color-tints;
+    }
+
+    &-play {
+        width: 60px;
+        height: 60px;
+        background: url(../img/play.png) no-repeat center;
+        margin: 0 15px 0 30px;
+    }
+
+    &-btn {
+        display: block;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: $color-tints;
+    }
+
+    &-img {
+        width: 640px;
+        height: 734px;
+        position: relative;
+
+        .crypto {
+            position: absolute;
+            bottom: 180px;
+            width: 290px;
+            z-index: 4;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .platform {
+            position: absolute;
+            width: 517px;
+            bottom: 66px;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .platform-light {
+            position: absolute;
+            width: 630px;
+            bottom: 0px;
+            z-index: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: "";
+            width: 514px;
+            max-height: 465px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(../img/light-cripto.png) no-repeat center;
+            z-index: 3;
+        }
+    }
+}

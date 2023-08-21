@@ -1,0 +1,20 @@
+@mixin dm-sans($fz, $lh, $fw){
+    font-family:'DM Sans', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin syne($fz, $lh, $fw){
+    font-family:'Syne', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin roboto($fz, $lh, $fw){
+    font-family:'Roboto', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}

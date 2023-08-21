@@ -1005,16 +1005,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding: 105px 23px;
-  background: #2A3A56;
-}
-.feedback-slider-wrapper::after {
-  content: "";
-  width: 96px;
-  height: 75px;
-  background: url(../img/quet.png) no-repeat center;
-  position: absolute;
-  right: 20px;
-  bottom: 22px;
+  background: #2a3a56;
 }
 .feedback-img {
   position: absolute;
@@ -1024,44 +1015,8 @@ body {
   border-radius: 50%;
   width: 174px;
   height: 174px;
-  background: #E9EEF4;
 }
 .feedback-img img {
   height: 100%;
   width: 100%;
-  margin-top: 10px;
-}
-.feedback-slider-name {
-  display: block;
-  color: #FEB109;
-  text-shadow: 8px 8px 23px rgba(0, 0, 0, 0.37);
-  font-family: DM Sans;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 30px;
-  text-transform: capitalize;
-  margin-bottom: 3px;
-}
-.feedback-slider-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-.feedback-slider-lock {
-  color: #E9EEF4;
-  text-align: center;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: capitalize;
-}
-.feedback-slider-text {
-  color: #DFE1E2;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

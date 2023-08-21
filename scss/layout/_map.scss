@@ -1,0 +1,79 @@
+.map {
+    padding: 87px 0 98px;
+    background-color: #111e36;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    &-text {
+        max-width: 487px;
+        width: 100%;
+        margin: 35px auto 70px;
+    }
+
+    &-block {
+        max-width: 760px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 30px;
+        position: relative;
+
+        &:not(:last-child)::before{
+            content: "";
+            position: absolute;
+            background: $color-tints;
+            width: 2px;
+            top: 25px;
+            bottom: -30px;
+            left: 40%;
+            
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            background: $color-tints;
+            width: 25px;
+            height: 25px;
+            top: 0;
+            left: 38.5%;
+            border-radius: 50%;
+            background: $color-tints;
+        }
+    }
+
+    &-block-year {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        width: 265px;
+
+        .year-title {
+            color: #FEB109;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: capitalize;
+        }
+
+        .goal {
+            color: #E9EEF4;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26px;
+            text-transform: capitalize;
+        }
+    }
+
+    &-block-text {
+        max-width: 408px;
+        width: 100%;
+        color: #EDEDED;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}

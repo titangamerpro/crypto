@@ -1,0 +1,70 @@
+.questions {
+    padding-top: 120px;
+
+    &-text {
+        width: 487px;
+        margin: 30px auto 70px;
+        text-align: center;
+    }
+
+    &-tab {
+        padding: 5px 50px 5px 50px;
+        border-radius: 10px;
+        background: linear-gradient(347deg, #EE1D78 2.60%, #E215A7 100%);
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+            background:$bg-tabs;
+            padding: 5px 50px 21px 50px;
+            pointer-events: none;
+
+           .tab-title {
+                color: #FEB109;
+            }
+
+            &::after{
+                background: url(../img/arrow-yelov.svg)no-repeat center;
+                width: 60px;
+                height: 60px;
+                top: 1px;
+                right: 8px;
+            }
+        }
+
+        &::after{
+            content: '';
+            width: 14px;
+            height: 24px;
+            position: absolute;
+            right: 23px;
+            top: 23px;
+            background: url(../img/tab-arrow.svg) no-repeat center;
+            transition: 0.3s linear ;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+
+    .tab-title{
+        font-size: 20px;
+        line-height: 50px;
+        text-transform: capitalize;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-text {
+        font-size: 16px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+
+}

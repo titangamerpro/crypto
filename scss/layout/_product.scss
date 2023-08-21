@@ -1,0 +1,79 @@
+.product {
+    padding-top: 126px;
+
+    &-text {
+        margin: 36px auto 71px;
+        width: 487px;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    &-block {
+        width: 370px;
+        padding: 25px 33px;
+
+        &:hover {
+            background: linear-gradient(321.51deg, #E215A7 -25.98%, #EE1D78 123.64%);
+            border-radius: 10px;
+
+            .product-icon {
+                background: linear-gradient(87.09deg, #E215A7 -24.36%, #EE1D69 91.65%);
+                box-shadow: inset 0px 0px 20px rgba(201, 0, 110, 0.93),
+                -2px -2px 5px rgba(108, 136, 192, 0.03),
+                inset 0px 0px 12px rgba(206, 210, 219, 0.58),
+                5px 4px 15px rgba(0, 0, 0, 0.15);
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    &-icon {
+        background: linear-gradient(0deg, #13223D, #13223D), #13223D;
+        box-shadow: inset 0px 0px 24px -7px #88BCFA;
+        border-radius: 10px;
+        width: 81px;
+        height: 81px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-block-title {
+        margin: 37px 0 20px;
+        display: block;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #E9EEF4;
+    }
+
+    &-block-text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        color: #DFDDDD;
+        margin-bottom: 28px;
+    }
+
+    &-block-link {
+        display: block;
+        width: 139px;
+        border: 1px solid #E215A7;
+        filter: drop-shadow(3px 4px 13px rgba(0, 0, 0, 0.28));
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 7px 0 7px 16px;
+        background: url(../img/arrow-link.svg) no-repeat right 14px center;
+        text-transform: capitalize;
+    }
+
+    
+    
+}

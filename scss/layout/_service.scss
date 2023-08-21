@@ -1,0 +1,101 @@
+.service {
+    padding: 120px 0 38px;
+    background: url(../img/Ellipse-title.svg) no-repeat top center,
+        url(../img/Ellipse-top.svg) no-repeat left top;
+
+    &-text {
+        width: 487px;
+        margin: 30px auto 70px;
+        text-align: center;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &-block {
+        width: 380px;
+        padding: 23px 33px 35px;
+        position: relative;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            background: transparent;
+            transform: rotate(4.7deg);
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background: linear-gradient(302.72deg, #E215A7 -19.47%, #EE1D78 119.24%);
+            box-shadow: 5px 6px 8px rgba(29, 19, 19, 0.27);
+            border-radius: 10px;
+
+            &::before {
+                background: linear-gradient(321.06deg, #E215A7 -28.43%, #EE1D78 68.83%);
+                opacity: 0.79;
+                border-radius: 10px;
+            }
+
+
+            figure {
+                background: transparent;
+            }
+        }
+
+        figure {
+            width: 83px;
+            height: 80px;
+            background: linear-gradient(0deg, #13223D, #13223D), #13223D;
+            box-shadow: inset 0px 0px 24px -7px #88BCFA;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                margin: 0 auto;
+            }
+        }
+
+        &-title {
+            margin: 15px 0 20px;
+            font-size: 24px;
+            line-height: 26px;
+            text-transform: capitalize;
+            text-align: center;
+            display: block;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+
+    &-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #E215A7 url(../img/arow.svg) no-repeat center;
+        box-shadow: 5px 5px 19px rgba(0, 0, 0, 0.61);
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
