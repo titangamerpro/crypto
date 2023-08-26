@@ -1,4 +1,7 @@
 .feedback{
+
+    padding-top: 126px;
+
     &-slider-wrapper {
         width: 370px;
         margin: 0 auto;
@@ -70,5 +73,9 @@
         font-weight: 400;
         line-height: 26px;
         text-transform: capitalize;
+    }
+
+    &-block {
+        padding-top: 29px;
     }
 }
