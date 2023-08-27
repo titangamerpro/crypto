@@ -12,4 +12,14 @@ $(document).ready(function () {
         slidesToShow: 2,
         slidesToScroll: 1
     })
+
+    $(".stars").rateYo({
+        starWidth: "20px",
+        normalFill: "#E215A7",
+        multiColor: {
+            "startColor": "#E215A7", 
+            "endColor"  : "#E215A7"
+          },
+
+      });
 });

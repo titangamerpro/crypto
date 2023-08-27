@@ -6,7 +6,7 @@
         width: 370px;
         margin: 0 auto;
         position: relative;
-        padding: 105px 23px;
+        padding: 125px 23px 105px;
         background: $bg-tabs;
 
         &::after{
@@ -77,5 +77,10 @@
 
     &-block {
         padding-top: 29px;
+    }
+
+    .jq-ry-normal-group{
+        display: flex;
+        gap: 5px;
     }
 }
