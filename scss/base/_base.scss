@@ -41,6 +41,11 @@ input {
 
 // main style
 
+html, body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
 body {
     @include dm-sans(17px, 1, 500);
     color: $color-primery;

@@ -167,6 +167,11 @@ input:focus {
   outline: none;
 }
 
+html, body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
@@ -1203,4 +1208,27 @@ body {
 .feedback .jq-ry-normal-group {
   display: flex;
   gap: 5px;
+}
+.feedback .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+.feedback .slick-dots li {
+  font-size: 0;
+  line-height: 0;
+  width: 10px;
+  height: 5px;
+  border-radius: 20px;
+  background: #5E7693;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.4);
+}
+.feedback .slick-dots li.slick-active {
+  background: #E6189A;
+  width: 20px;
+}
+.feedback .slick-dots button {
+  font-size: 0;
+  line-height: 0;
 }/*# sourceMappingURL=main.css.map */

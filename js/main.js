@@ -10,16 +10,15 @@ $(document).ready(function () {
     $(".feedback-slider").slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true
     })
 
     $(".stars").rateYo({
         starWidth: "20px",
         normalFill: "#E215A7",
-        multiColor: {
-            "startColor": "#E215A7", 
-            "endColor"  : "#E215A7"
-          },
-
+          readOnly: true
       });
 });

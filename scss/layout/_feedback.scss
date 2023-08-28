@@ -1,4 +1,4 @@
-.feedback{
+.feedback {
 
     padding-top: 126px;
 
@@ -9,7 +9,7 @@
         padding: 125px 23px 105px;
         background: $bg-tabs;
 
-        &::after{
+        &::after {
             content: '';
             width: 96px;
             height: 75px;
@@ -79,8 +79,35 @@
         padding-top: 29px;
     }
 
-    .jq-ry-normal-group{
+    .jq-ry-normal-group {
         display: flex;
         gap: 5px;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+
+        li {
+            font-size: 0;
+            line-height: 0;
+            width: 10px;
+            height: 5px;
+            border-radius: 20px;
+            background: #5E7693;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.40);
+
+            &.slick-active {
+                background: #E6189A;
+                width: 20px;
+            }
+        }
+
+        button {
+            font-size: 0;
+            line-height: 0;
+        }
     }
 }
