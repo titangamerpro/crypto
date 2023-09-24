@@ -1231,4 +1231,14 @@ body {
 .feedback .slick-dots button {
   font-size: 0;
   line-height: 0;
+}
+
+.lastNews {
+  padding: 120px 0;
+}
+.lastNews-text {
+  max-width: 487px;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto 70px;
 }/*# sourceMappingURL=main.css.map */
