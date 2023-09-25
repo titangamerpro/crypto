@@ -1250,11 +1250,11 @@ body {
   transition: 0.3s linear;
 }
 .lastNews-wrapper:hover {
-  background: #DD18A4;
+  background: #B51980;
 }
 .lastNews-wrapper:hover .lastNews-content {
   height: auto;
-  background: #DD18A4;
+  background: #B51980;
 }
 .lastNews-wrapper:hover figure {
   height: 212px;
@@ -1263,13 +1263,18 @@ body {
   height: 212px;
   width: 100%;
 }
+.lastNews-wrapper:hover .lastNews-header {
+  border-color: #dd18a4;
+}
 .lastNews-wrapper figure {
   border-radius: 10px;
   transition: 0.3s linear;
+  height: 257px;
 }
 .lastNews-wrapper img {
   border-radius: 10px;
   transition: 0.3s linear;
+  height: 100%;
 }
 .lastNews-content {
   height: 170px;

@@ -16,6 +16,15 @@ $(document).ready(function () {
         autoplay: true
     })
 
+    $(".lastNews-slaider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        // autoplay: true
+    })
+
     $(".stars").rateYo({
         starWidth: "20px",
         normalFill: "#E215A7",

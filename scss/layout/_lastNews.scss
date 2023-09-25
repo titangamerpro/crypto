@@ -16,11 +16,11 @@
         transition: $transition;
 
         &:hover {
-            background: #DD18A4;
+            background: #B51980;
 
             .lastNews-content {
                 height: auto;
-                background: #DD18A4;
+                background: #B51980;
             }
 
             figure {
@@ -32,18 +32,22 @@
 
                 }
             }
+            .lastNews-header{
+                border-color: #dd18a4;
+            }
         }
 
         figure {
             border-radius: 10px;
             transition: $transition;
+            height: 257px;
 
         }
 
         img {
             border-radius: 10px;
             transition: $transition;
-
+            height: 100%;
         }
     }
 
