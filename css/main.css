@@ -1244,6 +1244,7 @@ body {
 }
 .lastNews-wrapper {
   width: 370px;
+  height: 427px;
   border-radius: 10px;
   background: #283752;
   margin: 0 auto;
@@ -1275,13 +1276,15 @@ body {
   border-radius: 10px;
   transition: 0.3s linear;
   height: 100%;
+  width: 100%;
 }
 .lastNews-content {
   height: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 53px;
+  padding: 30px 53px 27px;
+  border-radius: 10px;
   transition: 0.3s linear;
   overflow-y: hidden;
 }
@@ -1309,7 +1312,7 @@ body {
   font-weight: 500;
   line-height: 30px;
   text-transform: capitalize;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 .lastNews-content-link {
   color: #FEB109;

@@ -10,6 +10,7 @@
 
     &-wrapper {
         width: 370px;
+        height: 427px;
         border-radius: 10px;
         background: #283752;
         margin: 0 auto;
@@ -48,6 +49,7 @@
             border-radius: 10px;
             transition: $transition;
             height: 100%;
+            width: 100%;
         }
     }
 
@@ -56,7 +58,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px 53px;
+        padding: 30px 53px 27px;
+        border-radius: 10px;
         transition: $transition;
         overflow-y: hidden;
     }
@@ -85,7 +88,7 @@
         font-weight: 500;
         line-height: 30px;
         text-transform: capitalize;
-        margin-bottom: 31px;
+        margin-bottom: 28px;
     }
 
     &-content-link {
