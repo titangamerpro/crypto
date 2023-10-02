@@ -1,0 +1,32 @@
+.start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #273651;
+    box-shadow: 0px 35px 40px 0px rgba(0, 0, 0, 0.20);
+
+    &-img {
+        max-width: 447px;
+        width: 100%;
+       
+        
+    }
+
+    &-content{
+        max-width: 416px;
+        width: 100%;
+        padding: 32px 0 31px 110px;
+
+    }
+
+    &-subtitle {
+        color: #F0F0F0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
