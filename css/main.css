@@ -1329,7 +1329,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  background: #273651;
+  background: #273651 url(../img/konvert.png) no-repeat left 45% bottom 18px;
   box-shadow: 0px 35px 40px 0px rgba(0, 0, 0, 0.2);
 }
 .start-img {
@@ -1337,7 +1337,7 @@ body {
   width: 100%;
 }
 .start-content {
-  max-width: 416px;
+  max-width: 530px;
   width: 100%;
   padding: 32px 0 31px 110px;
 }
@@ -1349,4 +1349,47 @@ body {
   text-transform: capitalize;
   margin-bottom: 20px;
   display: block;
+}
+.start-title {
+  font-family: "Syne", sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: linear-gradient(107deg, #EE1D78 26.16%, #E215A7 108.71%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+.start-text {
+  color: #F0F0F0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 208px;
+}
+.start-link {
+  color: #F0F0F0;
+  font-size: 16px;
+  line-height: 26px;
+  width: 170px;
+  display: block;
+  margin-top: 25px;
+  background: linear-gradient(282.95deg, #E215A7 -11.93%, #EE1D78 134.56%);
+  padding: 7px 0 7px 13px;
+  border-radius: 4px;
+  position: relative;
+}
+.start-link::after {
+  content: "";
+  width: 7px;
+  height: 10px;
+  background: url(../img/arow.svg) no-repeat center;
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  background-size: 100%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=main.css.map */
