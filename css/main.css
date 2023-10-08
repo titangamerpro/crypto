@@ -1331,6 +1331,7 @@ body {
   border-radius: 10px;
   background: #273651 url(../img/konvert.png) no-repeat left 45% bottom 18px;
   box-shadow: 0px 35px 40px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
 }
 .start-img {
   max-width: 447px;
