@@ -1,3 +1,112 @@
 .footer {
     padding: 340px 0 70px;
+
+    &-body {
+        display: flex;
+        justify-content: center;
+        gap: 77px;
+        margin-top: 110px;
+    }
+
+    &-logo {
+        width: 175px;
+        height: 65px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        width: 240px;
+        margin-bottom: 30px;
+    }
+
+    &-social {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background: $color-primery;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $transition;
+
+        &:hover {
+            background: #e215a7;
+
+            svg {
+                fill: $color-primery;
+            }
+        }
+
+        svg {
+            fill: #e215a7;
+        }
+    }
+
+    &-title {
+        display: block;
+        margin-top: 32px;
+        margin-bottom: 20px;
+        color: #E9EEF4;
+        font-size: 20px;
+        line-height: 34px;
+        text-transform: capitalize;
+    }
+
+    &-item {
+        color: #CBD1D9;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: lowercase;
+
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+
+    &-form-block {
+        position: relative;
+        display: flex;
+        width: 300px;
+
+        input {
+            width: 100%;
+            height: 70px;
+            padding: 23px 100px 23px 30px;
+            border-radius: 20px;
+            border: 1px solid #091237;
+            background: #111E36;
+            box-shadow: 0px 0px 5px 3px #323F57 inset;
+            font: inherit;
+            font-weight: 400;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #E9EEF4;
+
+            &::placeholder{
+                font: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    .form-btn {
+        position: absolute;
+        width: 100px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid #091237;
+        background: linear-gradient(120deg, #EE1D78 -12.58%, #E215A7 92.53%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 41, 118, 0.16) inset;
+        padding: 22px 0 22px 18px;
+        right: 3px;
+        top: 4px;
+        z-index: 1;
+        text-align: left;
+    }
 }
