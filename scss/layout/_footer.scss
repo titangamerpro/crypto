@@ -1,11 +1,15 @@
 .footer {
     padding: 340px 0 70px;
+    background: url(../img/footer-bg.png) no-repeat center;
+    background-size: cover;
 
     &-body {
         display: flex;
         justify-content: center;
         gap: 77px;
         margin-top: 110px;
+        padding-bottom: 60px;
+        border-bottom: 2px solid #1C2640;
     }
 
     &-logo {
@@ -89,7 +93,7 @@
             text-transform: capitalize;
             color: #E9EEF4;
 
-            &::placeholder{
+            &::placeholder {
                 font: inherit;
                 color: inherit;
             }
@@ -101,12 +105,38 @@
         width: 100px;
         border-radius: 0px 20px 20px 0px;
         border: 1px solid #091237;
-        background: linear-gradient(120deg, #EE1D78 -12.58%, #E215A7 92.53%);
+        background: url(../img/send.svg) no-repeat right 18px center, linear-gradient(120deg, #EE1D78 -12.58%, #E215A7 92.53%);
         box-shadow: 0px 0px 10px 0px rgba(0, 41, 118, 0.16) inset;
         padding: 22px 0 22px 18px;
         right: 3px;
         top: 4px;
         z-index: 1;
         text-align: left;
+        color: #F0F0F0;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: capitalize;
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        li {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: capitalize;
+        }
+    }
+
+    &-copyright {
+        color: #F2F2F2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: capitalize;
     }
 }
