@@ -186,6 +186,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 .btn-active:hover {
   transform: scale(0.98);
@@ -277,6 +282,40 @@ body {
   display: block;
   width: 174px;
 }
+@media (max-width: 1200px) {
+  .header .nav {
+    position: absolute;
+    background: blue;
+    height: 100vh;
+    left: 100%;
+    right: -100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    overflow-x: hidden;
+  }
+}
+.header .burger {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .header .burger {
+    display: block;
+    width: 60px;
+    height: 40px;
+    background: url(../img/burger.svg) no-repeat center;
+  }
+  .header .burger.active {
+    background: u;
+  }
+}
+.header .header-block {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -285,6 +324,12 @@ body {
 .header .menu {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 1200px) {
+  .header .menu {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header .link {
   font-size: 16px;
