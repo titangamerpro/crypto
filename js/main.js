@@ -30,4 +30,9 @@ $(document).ready(function () {
         normalFill: "#E215A7",
           readOnly: true
       });
+
+      $('.burger').click(function(){
+        $('.burger').toggleClass('active')
+        $('.nav').toggleClass('active')
+      })
 });

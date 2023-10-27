@@ -286,7 +286,7 @@ body {
   .header .nav {
     position: absolute;
     background: blue;
-    height: 100vh;
+    height: 110vh;
     left: 100%;
     right: -100%;
     top: 0;
@@ -295,6 +295,11 @@ body {
     align-items: center;
     z-index: 2;
     overflow-x: hidden;
+    transition: 0.3s linear;
+  }
+  .header .nav.active {
+    left: 0;
+    right: 0;
   }
 }
 .header .burger {
@@ -303,12 +308,14 @@ body {
 @media (max-width: 1200px) {
   .header .burger {
     display: block;
+    position: relative;
+    z-index: 5;
     width: 60px;
     height: 40px;
     background: url(../img/burger.svg) no-repeat center;
   }
   .header .burger.active {
-    background: u;
+    background: url(../img/cloce.svg) no-repeat center;
   }
 }
 .header .header-block {
@@ -316,10 +323,21 @@ body {
   gap: 30px;
   align-items: center;
 }
+@media (max-width: 450px) {
+  .header .header-block {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 450px) {
+  .header-wrapper {
+    align-items: flex-start;
+  }
 }
 .header .menu {
   display: flex;
@@ -1377,6 +1395,13 @@ body {
   background: #273651 url(../img/konvert.png) no-repeat left 45% bottom 18px;
   box-shadow: 0px 35px 40px 0px rgba(0, 0, 0, 0.2);
   margin-top: 0;
+  gap: 50px;
+}
+@media (max-width: 1200px) {
+  .start {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .start-img {
   max-width: 447px;
@@ -1449,6 +1474,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 77px;
+  flex-wrap: wrap;
   margin-top: 110px;
   padding-bottom: 60px;
   border-bottom: 2px solid #1C2640;
@@ -1539,9 +1565,9 @@ body {
   border: 1px solid #091237;
   background: url(../img/send.svg) no-repeat right 18px center, linear-gradient(120deg, #EE1D78 -12.58%, #E215A7 92.53%);
   box-shadow: 0px 0px 10px 0px rgba(0, 41, 118, 0.16) inset;
-  padding: 22px 0 22px 18px;
-  right: 3px;
-  top: 4px;
+  padding: 20px 0 20px 18px;
+  right: 0px;
+  top: 1px;
   z-index: 1;
   text-align: left;
   color: #F0F0F0;
@@ -1553,6 +1579,13 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .footer-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .footer-bottom li {
   color: #FFF;
@@ -1567,4 +1600,5 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-transform: capitalize;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,12 @@
     background: #273651 url(../img/konvert.png) no-repeat left 45% bottom 18px;
     box-shadow: 0px 35px 40px 0px rgba(0, 0, 0, 0.20);
     margin-top: 0;
+    gap: 50px;
+
+    @media(max-width:1200px){
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
     &-img {
         max-width: 447px;
