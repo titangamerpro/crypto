@@ -1,14 +1,26 @@
 .hero {
     background: url(../img/bg-hero.png) no-repeat center;
+    background-size: cover;
 
     &-wrapper {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width:1200px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &-content {
         width: 570px;
         margin: 128px 0 215px;
+
+
+        @media(max-width:1200px) {
+            margin: 65px 0 50px;
+        }
+
     }
 
     &-subtitle {
@@ -81,7 +93,8 @@
 
         .platform {
             position: absolute;
-            width: 517px;
+            max-width: 517px;
+            width: 100%;
             bottom: 66px;
             z-index: 1;
             left: 50%;
@@ -90,7 +103,8 @@
 
         .platform-light {
             position: absolute;
-            width: 630px;
+            max-width: 630px;
+            width: 100%;
             bottom: 0px;
             z-index: 0;
             left: 50%;
@@ -99,7 +113,8 @@
 
         &::after {
             content: "";
-            width: 514px;
+            max-width: 514px;
+            width: 100%;
             max-height: 465px;
             height: 100%;
             position: absolute;

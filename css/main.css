@@ -374,14 +374,26 @@ body {
 
 .hero {
   background: url(../img/bg-hero.png) no-repeat center;
+  background-size: cover;
 }
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1200px) {
+  .hero-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .hero-content {
   width: 570px;
   margin: 128px 0 215px;
+}
+@media (max-width: 1200px) {
+  .hero-content {
+    margin: 65px 0 50px;
+  }
 }
 .hero-subtitle {
   font-weight: 500;
@@ -448,7 +460,8 @@ body {
 }
 .hero-img .platform {
   position: absolute;
-  width: 517px;
+  max-width: 517px;
+  width: 100%;
   bottom: 66px;
   z-index: 1;
   left: 50%;
@@ -456,7 +469,8 @@ body {
 }
 .hero-img .platform-light {
   position: absolute;
-  width: 630px;
+  max-width: 630px;
+  width: 100%;
   bottom: 0px;
   z-index: 0;
   left: 50%;
@@ -464,7 +478,8 @@ body {
 }
 .hero-img::after {
   content: "";
-  width: 514px;
+  max-width: 514px;
+  width: 100%;
   max-height: 465px;
   height: 100%;
   position: absolute;
@@ -1411,6 +1426,11 @@ body {
   max-width: 530px;
   width: 100%;
   padding: 32px 0 31px 110px;
+}
+@media (max-width: 590px) {
+  .start-content {
+    padding: 32px 0 31px 0px;
+  }
 }
 .start-subtitle {
   color: #F0F0F0;
