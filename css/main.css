@@ -496,17 +496,25 @@ body {
 }
 .aboutus-subtitle {
   margin: 35px auto 70px;
-  width: 491px;
+  max-width: 491px;
+  width: 100%;
   text-align: center;
 }
 .aboutus-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 33px;
   align-items: center;
   max-width: 1545px;
   width: 100%;
   margin-left: auto;
+}
+@media (max-width: 1600px) {
+  .aboutus-wrapper {
+    padding: 0px 10px 0 10px;
+    margin: auto;
+  }
 }
 .aboutus-content {
   max-width: 637px;
@@ -545,6 +553,12 @@ body {
   align-items: center;
   gap: 52px;
 }
+@media (max-width: 980px) {
+  .aboutus-botom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .aboutus-botom-content {
   width: 449px;
 }
@@ -571,7 +585,8 @@ body {
   background: url(../img/Ellipse-title.svg) no-repeat top center, url(../img/Ellipse-top.svg) no-repeat left top;
 }
 .service-text {
-  width: 487px;
+  max-width: 487px;
+  width: 100%;
   margin: 30px auto 70px;
   text-align: center;
 }
@@ -579,6 +594,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .service-block {
   width: 380px;
@@ -586,6 +602,12 @@ body {
   position: relative;
   transition: 0.3s ease;
   cursor: pointer;
+}
+@media (max-width: 390px) {
+  .service-block {
+    width: 100%;
+    padding: 13px 23px 25px;
+  }
 }
 .service-block::before {
   content: "";
@@ -658,16 +680,25 @@ body {
 }
 .product-text {
   margin: 36px auto 71px;
-  width: 487px;
+  max-width: 487px;
+  width: 100%;
+  text-align: center;
 }
 .product-wrapper {
   display: flex;
   justify-content: center;
   gap: 60px;
+  flex-wrap: wrap;
 }
 .product-block {
   width: 370px;
   padding: 25px 33px;
+}
+@media (max-width: 390px) {
+  .product-block {
+    width: 100%;
+    padding: 15px 13px;
+  }
 }
 .product-block:hover {
   background: linear-gradient(321.51deg, #E215A7 -25.98%, #EE1D78 123.64%);
@@ -745,6 +776,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 64px;
+  flex-wrap: wrap;
 }
 .seal-block {
   width: 370px;
@@ -756,6 +788,12 @@ body {
   cursor: pointer;
   transition: 0.3s linear;
   position: relative;
+}
+@media (max-width: 390px) {
+  .seal-block {
+    width: 100%;
+    padding: 20px 22px 43px 22px;
+  }
 }
 .seal-block:hover {
   background: linear-gradient(321.51deg, #E215A7 -47.46%, #EE1D78 138.52%);

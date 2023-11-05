@@ -3,18 +3,26 @@
 
     &-text {
         margin: 36px auto 71px;
-        width: 487px;
+        max-width: 487px;
+        width: 100%;
+        text-align: center;
     }
 
     &-wrapper {
         display: flex;
         justify-content: center;
         gap: 60px;
+        flex-wrap: wrap;
     }
 
     &-block {
         width: 370px;
         padding: 25px 33px;
+
+        @media(max-width: 390px){
+            width: 100%;
+            padding: 15px 13px;
+        }
 
         &:hover {
             background: linear-gradient(321.51deg, #E215A7 -25.98%, #EE1D78 123.64%);
