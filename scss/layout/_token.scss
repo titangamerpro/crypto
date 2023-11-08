@@ -48,6 +48,10 @@
         line-height: 26px;
         text-transform: capitalize;
         color: $color-tints;
+
+        @media(max-width: 1200px){
+            margin: auto;
+        }
     }
 
     &-text {

@@ -1,11 +1,12 @@
 .map {
-    padding: 87px 0 98px;
+    padding: 80px 0 98px;
     background-color: #111e36;
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
+    background-attachment: fixed;
 
     &-text {
         max-width: 487px;
@@ -20,6 +21,11 @@
         margin: 0 auto 30px;
         position: relative;
 
+        @media(max-width: 850px){
+            justify-content: flex-start;
+            gap: 25px;
+        }
+
         &:not(:last-child)::before{
             content: "";
             position: absolute;
@@ -28,6 +34,10 @@
             top: 25px;
             bottom: -30px;
             left: 40%;
+
+            @media(max-width: 850px){
+                left: 0%;
+            }
             
         }
         &::after{
@@ -40,6 +50,10 @@
             left: 38.5%;
             border-radius: 50%;
             background: $color-tints;
+
+            @media(max-width: 850px){
+                left: -1.5%;
+            } 
         }
     }
 

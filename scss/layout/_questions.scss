@@ -1,10 +1,12 @@
 .questions {
-    padding-top: 120px;
+    padding: 120px 0 40px;
 
     &-text {
-        width: 487px;
+        max-width: 487px;
+        width: 100%;
         margin: 30px auto 70px;
         text-align: center;
+
     }
 
     &-tab {
@@ -15,15 +17,15 @@
         cursor: pointer;
 
         &.active {
-            background:$bg-tabs;
+            background: $bg-tabs;
             padding: 5px 50px 21px 50px;
             pointer-events: none;
 
-           .tab-title {
+            .tab-title {
                 color: #FEB109;
             }
 
-            &::after{
+            &::after {
                 background: url(../img/arrow-yelov.svg)no-repeat center;
                 width: 60px;
                 height: 60px;
@@ -32,7 +34,7 @@
             }
         }
 
-        &::after{
+        &::after {
             content: '';
             width: 14px;
             height: 24px;
@@ -40,18 +42,32 @@
             right: 23px;
             top: 23px;
             background: url(../img/tab-arrow.svg) no-repeat center;
-            transition: 0.3s linear ;
+            transition: 0.3s linear;
+
+            @media(max-width: 450px){
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 30px;
+        }
+
+
+        @media(max-width: 450px) {
+            padding: 5px 50px 5px 10px;
         }
     }
 
-    .tab-title{
+    .tab-title {
         font-size: 20px;
         line-height: 50px;
         text-transform: capitalize;
+
+        @media(max-width: 450px) {
+            line-height: 35px;
+        }
     }
 
     .tab-content {
