@@ -13,7 +13,18 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    autoplay: false,
+                  }
+            }
+        ]
     })
 
     $(".lastNews-slaider").slick({
@@ -28,11 +39,11 @@ $(document).ready(function () {
     $(".stars").rateYo({
         starWidth: "20px",
         normalFill: "#E215A7",
-          readOnly: true
-      });
+        readOnly: true
+    });
 
-      $('.burger').click(function(){
+    $('.burger').click(function () {
         $('.burger').toggleClass('active')
         $('.nav').toggleClass('active')
-      })
+    })
 });

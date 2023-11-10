@@ -21,12 +21,14 @@
         margin: 0 auto 30px;
         position: relative;
 
-        @media(max-width: 850px){
+        @media(max-width: 850px) {
             justify-content: flex-start;
             gap: 25px;
         }
 
-        &:not(:last-child)::before{
+        
+
+        &:not(:last-child)::before {
             content: "";
             position: absolute;
             background: $color-tints;
@@ -35,12 +37,13 @@
             bottom: -30px;
             left: 40%;
 
-            @media(max-width: 850px){
+            @media(max-width: 850px) {
                 left: 0%;
             }
-            
+
         }
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             background: $color-tints;
@@ -51,9 +54,19 @@
             border-radius: 50%;
             background: $color-tints;
 
-            @media(max-width: 850px){
+            @media(max-width: 850px) {
                 left: -1.5%;
-            } 
+            }
+        }
+
+        @media(max-width: 450px) {
+            flex-direction: column;
+            padding-left: 15px;
+            align-items: center;
+
+            &:not(:last-child)::before {
+                left: 1.5%;
+            }
         }
     }
 
