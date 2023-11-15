@@ -33,7 +33,29 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: false,
-        // autoplay: true
+        // autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1151,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    autoplay: true,
+                    arrows: false,
+                  }
+            },
+            {
+                breakpoint: 780,  
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    // autoplay: true,
+                    arrows: false,
+                  }
+            }
+        ]
     })
 
     $(".stars").rateYo({

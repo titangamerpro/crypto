@@ -16,21 +16,31 @@
         position: relative;
         cursor: pointer;
 
+        @media(max-width: 450px){
+            padding: 5px 50px 5px 30px;
+        }
+
         &.active {
             background: $bg-tabs;
             padding: 5px 50px 21px 50px;
             pointer-events: none;
+
+            @media(max-width: 450px){
+                padding: 5px 50px 21px 30px;
+            }
 
             .tab-title {
                 color: #FEB109;
             }
 
             &::after {
-                background: url(../img/arrow-yelov.svg)no-repeat center;
+                background: url(../img/arrow-yelov.svg) no-repeat center;
                 width: 60px;
                 height: 60px;
                 top: 1px;
                 right: 8px;
+                transform: translateY(0);
+                z-index: 2;
             }
         }
 
@@ -39,8 +49,10 @@
             width: 14px;
             height: 24px;
             position: absolute;
+            z-index: 2;
             right: 23px;
-            top: 23px;
+            top: 50%;
+            transform: translateY(-50%);
             background: url(../img/tab-arrow.svg) no-repeat center;
             transition: 0.3s linear;
 
@@ -65,8 +77,8 @@
         line-height: 50px;
         text-transform: capitalize;
 
-        @media(max-width: 450px) {
-            line-height: 35px;
+        @media(max-width: 590px) {
+            line-height: 30px;
         }
     }
 
