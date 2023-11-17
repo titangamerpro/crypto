@@ -1659,6 +1659,11 @@ body {
 .footer .social-link svg {
   fill: #e215a7;
 }
+@media (max-width: 500px) {
+  .footer-block {
+    width: 100%;
+  }
+}
 .footer-title {
   display: block;
   margin-top: 32px;
