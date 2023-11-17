@@ -22,7 +22,7 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                     dots: true,
                     autoplay: false,
-                  }
+                }
             }
         ]
     })
@@ -43,17 +43,17 @@ $(document).ready(function () {
                     dots: false,
                     autoplay: true,
                     arrows: false,
-                  }
+                }
             },
             {
-                breakpoint: 780,  
+                breakpoint: 780,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: false,
                     // autoplay: true,
                     arrows: false,
-                  }
+                }
             }
         ]
     })
@@ -68,4 +68,30 @@ $(document).ready(function () {
         $('.burger').toggleClass('active')
         $('.nav').toggleClass('active')
     })
+
+    // ancor link
+    $(".menu .link").click(function (e) {
+        e.preventDefault()
+        let id = $(this).attr("href")
+        let top = $(id).offset().top
+        $("html, body").animate({
+            scrollTop: top,
+        }, 800)
+        console.log(id);
+    })
+
+    // btn up
+    $(window).scroll(function () { 
+        if ($(this).scrollTop() > 200) {
+           $(".btn-up").fadeIn() 
+        } else {
+          $(".btn-up").fadeOut();  
+        }
+    });
+
+    $(".btn-up").click(function (e) { 
+        $("html, body").animate({
+            scrollTop: 0,
+        }, 800) 
+    });
 });
