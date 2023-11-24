@@ -1,5 +1,5 @@
 .hero {
-    background: url(../img/bg-hero.png) no-repeat center;
+    background: url(../img/bg-hero.webp) no-repeat center;
     background-size: cover;
 
     &-wrapper {
@@ -65,7 +65,7 @@
     &-play {
         width: 60px;
         height: 60px;
-        background: url(../img/play.png) no-repeat center;
+        background: url(../img/play.webp) no-repeat center;
         margin: 0 15px 0 30px;
     }
 
@@ -121,7 +121,7 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            background: url(../img/light-cripto.png) no-repeat center;
+            background: url(../img/light-cripto.webp) no-repeat center;
             z-index: 3;
         }
     }

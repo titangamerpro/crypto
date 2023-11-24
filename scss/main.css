@@ -176,7 +176,7 @@ body {
 }
 
 .hero {
-  background: url(../img/bg-hero.png) no-repeat center;
+  background: url(../img/bg-hero.webp) no-repeat center;
 }
 .hero-wrapper {
   display: flex;
@@ -226,7 +226,7 @@ body {
 .hero-play {
   width: 60px;
   height: 60px;
-  background: url(../img/play.png) no-repeat center;
+  background: url(../img/play.webp) no-repeat center;
   margin: 0 15px 0 30px;
 }
 .hero-btn {
@@ -274,7 +274,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: url(../img/light-cripto.png) no-repeat center;
+  background: url(../img/light-cripto.webp) no-repeat center;
   z-index: 3;
 }
 
@@ -320,7 +320,7 @@ body {
   background: url(../img/mark.svg) no-repeat left center;
 }
 .aboutus-video {
-  background: #111E36 url(../img/video-bg.png) no-repeat center;
+  background: #111E36 url(../img/video-bg.webp) no-repeat center;
   box-shadow: -10px 0px 15px rgba(119, 133, 255, 0.04);
   border-radius: 4px 0px 0px 4px;
   width: 875px;
@@ -526,7 +526,7 @@ body {
   line-height: 46px;
   font-weight: 700;
   display: block;
-  background: url(../img/Subtract.png) no-repeat left center;
+  background: url(../img/Subtract.webp) no-repeat left center;
   margin: 50px 0 65px;
 }
 .seal-wrapper {
@@ -759,7 +759,7 @@ body {
 .map {
   padding: 87px 0 98px;
   background-color: #111e36;
-  background-image: url(../img/map.png);
+  background-image: url(../img/map.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -854,7 +854,7 @@ body {
   width: 270px;
   background-color: #2a3a56;
   border-radius: 4px;
-  background-image: url(../img/expert-block-bg.png);
+  background-image: url(../img/expert-block-bg.webp);
   background-repeat: no-repeat;
   background-position: bottom center;
   padding: 25px 0;
