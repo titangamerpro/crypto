@@ -50,6 +50,7 @@ body {
     @include dm-sans(17px, 1, 500);
     color: $color-primery;
     background-color: $bg-body;
+    overflow-x: hidden;
 }
 
 .container {

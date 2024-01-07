@@ -94,3 +94,5 @@ $(document).ready(function () {
         }, 800) 
     });
 });
+
+AOS.init()
