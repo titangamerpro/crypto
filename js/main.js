@@ -32,7 +32,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: false,
-        // autoplay: true,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1151,
@@ -95,4 +95,6 @@ $(document).ready(function () {
     });
 });
 
-AOS.init()
+AOS.init({
+    duration: 1200
+})
